@@ -35,7 +35,12 @@ app.use("/api/short",short_url)
 //redirect krna short_url se chrome tk
 app.get("/:id",redirectFromShortUrl)
 
-
+app.get('/',(req,res)=>{
+    res.send({
+        activeStatus:true,
+        error:false,
+    })
+})
 
 
 

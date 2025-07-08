@@ -17,7 +17,7 @@ dotenv.config("./.env")
 const app=express(); //express lo listen krega
 // app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:5173', // frontend origin
+  origin: 'https://shrink-x-short.vercel.app', // frontend origin
   credentials: true, // allow cookies or authorization headers
 }));
 
